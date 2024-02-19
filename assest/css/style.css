@@ -1,0 +1,380 @@
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  
+  .pie {
+    grid-area: pie;
+    background-color: burlywood;
+    color: rgb(12, 12, 12);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    
+  }
+  
+  .principal{
+    grid-area: principal;
+    display: flex;
+    justify-content: center;
+   flex-direction: column;
+  }
+  
+  .filtros{
+    grid-area: filtros;
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 0;
+  }
+
+ 
+
+  .barranav{
+    grid-area: navegacion;
+    background-color: beige;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+   
+  }
+  
+.botonmenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    background-color: burlywood;
+    gap: 0;
+    padding: 10px;
+    font-size: 15px;
+    height: 15%;
+    margin: 0;
+    border-radius: 5%;
+ 
+}
+
+.botonmenu:hover{ 
+    background-color: rgb(160, 235, 158);
+}
+a {
+    text-decoration: none;
+    color: #0f0f0f;
+    font-size: 100%;
+    }
+
+  .grid{
+    display: grid;
+    grid-template-areas: 
+    "navegacion"
+    "filtros"
+    "principal"
+    "pie";
+  }
+  
+    
+  .contacto{
+    display: inline;
+  }
+  
+  @media (max-width:576px){
+   
+    .inicio{
+      display: none;
+    }
+    .contacto{
+      display: none;
+    }
+    #icono{
+      display: none;
+    }
+    .grid {
+        grid-template-columns: 1fr; 
+        grid-template-areas: 
+          "navegacion"
+          "filtros"
+          "principal"
+          "pie";
+      }
+    .barranav{
+      flex-direction: column;
+      padding: 15px;
+       
+    }
+  
+    .gridprincipal{
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-content: center;
+      gap: 10px;
+    }
+    .pie{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-areas: "sobrenosotros"
+      "pie";
+      justify-content: center;
+    }
+
+    .botonmenu{
+        display: none;
+    }
+  }
+  
+  .cartas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 500px;
+    border-radius: 5px;
+    border: 1px solid black;
+    justify-content: space-around;
+  }
+  
+  .hyeinimg{
+    background-image: url(../img/hyein.jpg);
+     width: 300px;
+     background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+      border-radius: 5px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+  }
+  .hyeinimg:hover{
+    filter: grayscale(0);
+    transform: scale(1.5);
+    z-index: 999;
+  }
+  
+  .jacksonimg{
+    background-image: url(../img/jackson.jpg);
+     width: 300px;
+     background-size: cover;
+    height: 400px;
+    background-repeat: no-repeat;
+      border-radius: 5px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+  }
+  .jacksonimg:hover{
+    filter: grayscale(0);
+    transform: scale(1.5);
+    z-index: 999;
+  }
+  .taeimg{
+    background-image: url(../img/tae.jpg);
+    background-size: cover;
+     width: 300px;
+     height: 500px;
+    background-repeat: no-repeat;
+      border-radius: 5px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+  }
+  .taeimg:hover{
+    filter: grayscale(0);
+    transform: scale(1.5);
+    z-index: 999;
+  }
+  
+  .jinimg{
+    background-image: url(../img/jin.jpg);
+    background-size: cover;
+     width: 300px;
+     height: 500px;
+    background-repeat: no-repeat;
+      border-radius: 5px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+  }
+  
+  .jinimg:hover{
+    filter: grayscale(0);
+    transform: scale(1.5);
+    z-index: 999;
+  }
+  
+  .jiminimg{
+    background-image: url(../img/jimin.jpg);
+    background-size: cover;
+     width: 300px;
+     height: 500px;
+    background-repeat: no-repeat;
+      border-radius: 5px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+      
+  }
+
+  .jiminimg:hover{
+    filter: grayscale(0);
+    transform: scale(1.5);
+    z-index: 999;
+  }
+  
+  .jkimg{
+    background-image: url(../img/jk.jpg);
+    background-size: cover;
+     width: 300px;
+     height: 500px;
+    background-repeat: no-repeat;
+      border-radius: 5px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+  }
+  .jkimg:hover{
+    filter: grayscale(0);
+    transform: scale(1.5);
+    z-index: 999;
+  }
+  
+  .namimg{
+    background-image: url(../img/nam.jpg);
+    background-size: cover;
+     width: 300px;
+     height: 500px;
+    background-repeat: no-repeat;
+      border-radius: 5px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+  }
+  .namimg:hover{
+    filter: grayscale(0);
+    transform: scale(1.5);
+    z-index: 999;
+  }
+  
+  .yejiimg{
+    background-image: url(../img/yeji.jpg);
+    background-size: cover;
+     width: 300px;
+     height: 500px;
+    background-repeat: no-repeat;
+      border-radius: 5px;
+      filter: grayscale(100%);
+      transition: filter 0.3s ease-in-out;
+  }
+  .yejiimg:hover{
+    filter: grayscale(0);
+    transform: scale(1.5);
+    z-index: 999;
+  }
+  
+  .gridprincipal{
+    grid-template-columns: 1fr;
+    
+  }
+  
+  
+  
+  .boton{
+    background-color: antiquewhite; 
+      border: none;
+      border-radius: 5px;
+      color: rgb(8, 8, 8);
+      padding: 10px 10px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 18px;
+      margin: 4px 2px;
+      cursor: pointer;
+      width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .boton:hover{
+    background-color: rgb(160, 235, 158);
+  }
+  
+  
+  .paginacion {
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+  }
+ 
+  .paginacion a {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: #f2f2f2;
+    color: black;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+
+  .paginacion a:hover{
+    background-color: rgb(160, 235, 158);
+  }
+ 
+  
+ 
+  
+  .abajo{
+    grid-area: pie;
+    text-align: center;
+    align-content: center;
+    margin-top:auto;
+    margin-bottom: 0;
+  }
+  
+  @media  (min-width:1200px){
+   
+    .pie{
+      display: flex;
+      flex-direction: column;
+       justify-content: center;
+      align-items: center;
+      padding: 80px;
+      font-size: 20px;
+    }
+    .inicio{
+      display: inline;
+    }
+    .contacto{
+      display: inline;
+    }
+    #icono{
+      display: none;
+    }
+    .grid{
+      grid-template-columns: 2fr 9fr;
+      grid-template-areas: 
+      "navegacion filtros"
+      "pie principal";
+    }
+    .barranav{
+      flex-direction: column;
+  
+    }
+  
+    .gridprincipal{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      justify-content: center;
+      gap: 10px;
+    }
+    
+  
+  
+   }
+  
+  .sobrenosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+  }
